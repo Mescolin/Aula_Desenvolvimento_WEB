@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia do João</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+
+		<!-- Definindo o cabeçalho      -->
+		<header>
+
+			<!-- Definindo a div caixa  -->
+			<div class="caixa">
+				<!-- Definindo a tag de cabeçalho e tag de imagem -->
+				<h1><img src="logo.png" alt="Logo da Barbearia do João"></h1>
+
+				<!-- Definindo a navegação (Mmenu) -->
+				<nav>
+					<!-- Definindo a tag de Lista desordenada-->
+					<ul>
+						<!-- Definindo o tag de conteudo da lista e a tag <a> referente a link-->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+					<!--               Fim  da Lista desordenada-->
+
+				</nav>
+				<!--                   Fim  da navegação      -->
+
+			</div>
+			<!--                       Fim  da div caixa      -->
+
+		</header>
+		<!--                           Fim  do cabeçalho      -->
+
+
+		<!-- Utilizando a tag <main> que define o conteudo prinicpal  dentro do <body>    -->
+		<main>
+
+			<!-- Definindo a tag de Formulario   -->
+			<form>
+
+				<!-- Definindo a tag <label> representando uma legenda para um item  -->
+				<label for="nomesobrenome">Nome e sobrenome</label>
+
+				<!-- Definindo a tag <input> representando entrada de dados  -->
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<!-- Definindo a tag <fieldset> representando um agrupamento de elementos  -->
+				<fieldset>
+					<!--  Definindo a tag <legend> representa um rótulo para o conteúdo-->
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+				<!--                          Fim do agrupamento de elementos  -->
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+			<!--                          Fim do Formulario  -->
+
+			<!-- Definindo a tag <table> de tabela  -->
+			<table>
+				<!--Difinindo uma  linha numa tabela. -->
+				<tr>
+					<!--Definindo conteúdo de uma célula de dados -->
+					<td>Dia</td>
+					<td>Horário</td>
+				</tr>
+				<tr>
+					<td>Segunda</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+			</table>
+			<!--                           Fim da Tabela-->
+
+		</main>
+
+
+		<!-- 					           Definindo o rodapé  -->
+		<footer>
+			<img src="logo.png" alt="Logo da Barbearia do João" class="imagem-rodape">
+			<p class="copyright">&copy; Copyright Barbearia do João - 2019</p>
+		</footer>
+		<!-- 					          Fim do rodapé  -->
+	</body>
+</html>

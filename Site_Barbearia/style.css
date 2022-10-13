@@ -1,0 +1,223 @@
+/*
+O posicionamento padrão de todo elemento no HTML é estático  
+ou seja, possui o valor position: static, mesmo que este valor não tenha sido declarado.
+
+Static ->  O position static, que em português significa estático, é o mais utilizado de todos, pois, como dito acima, trata-se do valor que já vem por padrão quando criamos elementos no HTML. Seu comportamento, como o nome sugere, é ser estático. Ele apenas segue o fluxo junto dos outros elementos da página normalmente, tendo o canto superior esquerdo como referência
+Fixed ->   O position fixed, que em português significa fixo, faz com que o elemento que recebeu esta propriedade não se mova na tela. Mesmo que uma página tenha rolamento (scroll). Ao utilizarmos o rolamento para esquerda e direita, ou para cima e para baixo, o elemento não se move.
+Sticky ->  O position sticky, que em português significa pegajoso ou colado, é parecido com o fixed, porém a sua diferença é que, em vez dele ficar fixo em relação à tela, ele fica fixo em relação ao rolamento da página.
+Relative ->O position relative, que em português significa relativo, é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele. Ao aplicarmos essa propriedade em um elemento, ele não muda de posição, pois já vai estar posicionado em sua posição de referência.
+Absolute ->Position absolute, ou posicionamento absoluto em português, possui dois comportamentos diferentes. O primeiro é quando o elemento com essa propriedade possui um elemento pai de valor diferente de static. Neste caso, ele terá este elemento pai como referência para ser posicionado. Todo elemento pai que tiver qualquer valor de position, menos o static, será a referência para posicionar o elemento filho absolute!
+*/
+
+/*
+A propriedade CSS display especifica o tipo de caixa de renderização usada por um elemento. No HTML, os valores padrões da propriedade display são feitas a partir do comportamento descrito nas especificações HTML ou da folha de estilo padrão do navegador/usuário.
+display: none
+
+Tipos: 
+display: inline
+display: block
+display: list-item
+display: inline-block
+display: inline-table
+display: table
+display: table-cell
+display: table-column
+display: table-column-group
+display: table-footer-group
+display: table-header-group
+display: table-row
+display: table-row-group
+display: flex
+display: inline-flex
+display: grid
+display: inline-grid
+display: run-in
+display: inherit
+*/
+
+/*
+As propriedades da borda CSS permitem que você especifique o estilo, a largura e a cor da borda de um elemento.
+
+A border-stylepropriedade especifica que tipo de borda exibir.
+
+
+/*Definindo uma cor para o background e um espaçamento superior e inferior*/
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+/*Definindo uma posição , uma largura e margem*/
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+/*Definindo uma posição, uma margem do topo*/
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+/*Defininfo o display e uma margem a direita*/
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+/* Definindo o texto em letras maiúsculo,uma cor,negrito e tamanho e removendo decorações de texto para os elementos <h1>, <h2> e <h3> */
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*Definindo uma cor e definindo uma decorações para o link (sublinhado) */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/*Definindo uma largura,margens esquerda e direita (automatica), e um espaçamento superior e inferior*/
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/*Definindo um display, centralizando o texto,uma largura,alinhamento,margem,espaçamento,dorda e tipo de borda*/
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+/*Definindo uma cor para a borda*/
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+/*Definindo uma cor para a borda*/
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+/*Definindo uma tamanho para o texto*/
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+/*Definindo uma tamanho para o texto e tornando-o em negrito*/
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*Definindo uma tamanho para o texto*/
+.produto-descricao {
+	font-size: 18px;
+}
+
+/*Definindo uma tamanho para o texto,tornando-o em negrito e aplicando uma margem*/
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/*Centralizando o texto,definindo uma imagem como background e aplicando uma maregm superior e inferior */
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+/*Definindo uma cor,um tamanho para o texto e uma pargem */
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/*Definindo uma cor,um tamanho para o texto e uma pargem */
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*Definindo uma margem */
+form {
+	margin: 40px 0;
+}
+
+/*Definindo um display, um tamanho para o texto e uma margem */
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+/*Definindo um display, uma margem, um espaçamento e uma altura */
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+/*Definindo uma margem */
+.checkbox {
+	margin: 20px 0;
+}
+
+/*Definindo uma largura,um espaçamento,um backgroun,uma cor,definindo o texto em negrito,um tamanho para o texto,
+uma borda, uma animação e definindo o tipo do cursor */
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+/*Definindo uma cor para o background e um dimensionamento para o texto  */
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+/*Definindo uma margem*/
+table {
+	margin: 20px 0 40px;
+}
+
+/*Definindo uma cor para o background e definindo o texto em negrito */
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+/*Definindo uma borda e a cor e um espaçamento*/
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+.imagem-rodape{
+	filter: invert(100%);	
+}

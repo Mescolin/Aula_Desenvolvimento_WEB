@@ -1,0 +1,58 @@
+/*Difinindo uma altura*/
+#banner {
+	width:100%;
+}
+/*Definindo uma cor de background e um espaçamento   */
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+/*Definindo um espaçamento a esquerda  */
+.titulo-principal {
+	padding-left: 20px;
+}
+
+/*Centralizando o texto*/
+.titulo-centralizado {
+	text-align: center
+}
+
+/*Centralizando os paragrafos*/
+p {
+	text-align: center;
+}
+
+/*Definindo um tamanho para o texto*/
+#missao {
+	font-size: 20px
+}
+
+/* Definindo uma cor para as tags */
+em strong {
+	color: #FF0000;
+}
+
+/*definindo os textos em italico*/
+.itens {
+	font-style: italic
+}
+
+/*Definindo um cor para o background e um espaçamento */
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+/* Definindo as lisa em bloco,alinhamento ao top uma altura e a margem direita */
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+/*Definindo uma largura*/
+.imagembeneficios {
+	width: 50%;
+}
